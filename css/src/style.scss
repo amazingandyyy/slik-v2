@@ -1,0 +1,155 @@
+$primary: #1C8FA4;
+$black: #000000;
+$gray: #8B8B8B;
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: auto;
+    min-width: 1000px;
+}
+
+ul {
+    padding-left: 0px;
+}
+
+.container{
+    min-width: 1000px;
+}
+
+.navbar{
+    margin-bottom: 0px;
+    border-radius: 0px;
+    background: $primary;
+    color: white;
+    border: none;
+    transition: .1s all ease-in-out;
+
+    a{
+        color: white;
+    }
+
+    .navbar-brand{
+        padding: 20px 40px;
+    }
+    .nav {
+        font-weight: 300;
+        &>li{
+            transition: .1s all ease-in-out;
+            &.active{
+                background: rgba($black,0.1);
+            }
+            &>a{
+                letter-spacing: 0.5px;
+                padding: 20px 40px;
+
+                &:focus, &:hover{
+                    background: rgba($black,0.05);
+                }
+
+                &.info{
+                    padding-top: 10px;
+                    max-height: 60px;
+
+                    .name{
+                        font-weight: 600;
+                    }
+                    .credits {
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+.dashboard{
+    padding-top: 100px;
+    
+    ul{
+        list-style: none;
+    }
+    .left-menu{
+        padding-left: 30px;
+        font-size: 1.8rem;
+        font-weight: 400;
+        letter-spacing: 0.3px;
+        .title{
+            font-weight: 900;
+            padding-left: 1px;
+            margin: 0px;
+            margin-bottom: 10px;
+            font-size: 2rem;
+        }
+        .options{
+            li{
+                opacity: 0.6;
+                cursor: pointer;
+                line-height: 3rem;
+
+                &:hover{
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    .right-container{
+        .toolbox{
+            color: black;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            min-width: 850px;
+
+            .tool {
+                user-select: none;
+                cursor: pointer;
+                padding: 10px;
+                &:active{
+                    transform: scale(0.98);
+                }
+
+                &+.tool{
+                    padding-left: 10px;
+                }
+                input{
+                    border: none;
+                    outline: none;
+                    padding-left: 10px;
+                    &:hover{
+                        box-shadow: 0px 3px 0px -1px rgba($black, 0.5);
+                    }
+                    &:focus{
+                        box-shadow: 0px 3px 0px -1px $black;
+                    }
+                }
+                img {
+                    margin-right: 5px;
+                    height: 28px;
+                    display: inline-block;
+                }
+                span{
+                    font-size: 1.6rem;
+                    font-weight: 300;
+                    letter-spacing: 0.3px;
+                    height:30px;
+                    line-height: 30px;
+                    margin-top: 3px;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+
+    .info-table{
+        margin-top: 30px;
+        max-width: 550px;
+        font-size: 1.5rem;
+    }
+    .borderless td, .borderless th {
+        border: none;
+        opacity: 0.7;
+        &:hover{
+            opacity: 1;
+        }
+        
+    }
+}

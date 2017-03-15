@@ -1,0 +1,107 @@
+body {
+  font-family: 'Lato', sans-serif;
+  margin: auto;
+  min-width: 1000px; }
+
+ul {
+  padding-left: 0px; }
+
+.container {
+  min-width: 1000px; }
+
+.navbar {
+  margin-bottom: 0px;
+  border-radius: 0px;
+  background: #1C8FA4;
+  color: white;
+  border: none;
+  transition: .1s all ease-in-out; }
+  .navbar a {
+    color: white; }
+  .navbar .navbar-brand {
+    padding: 20px 40px; }
+  .navbar .nav {
+    font-weight: 300; }
+    .navbar .nav > li {
+      transition: .1s all ease-in-out; }
+      .navbar .nav > li.active {
+        background: rgba(0, 0, 0, 0.1); }
+      .navbar .nav > li > a {
+        letter-spacing: 0.5px;
+        padding: 20px 40px; }
+        .navbar .nav > li > a:focus, .navbar .nav > li > a:hover {
+          background: rgba(0, 0, 0, 0.05); }
+        .navbar .nav > li > a.info {
+          padding-top: 10px;
+          max-height: 60px; }
+          .navbar .nav > li > a.info .name {
+            font-weight: 600; }
+          .navbar .nav > li > a.info .credits {
+            font-size: 1.2rem; }
+
+.dashboard {
+  padding-top: 100px; }
+  .dashboard ul {
+    list-style: none; }
+  .dashboard .left-menu {
+    padding-left: 30px;
+    font-size: 1.8rem;
+    font-weight: 400;
+    letter-spacing: 0.3px; }
+    .dashboard .left-menu .title {
+      font-weight: 900;
+      padding-left: 1px;
+      margin: 0px;
+      margin-bottom: 10px;
+      font-size: 2rem; }
+    .dashboard .left-menu .options li {
+      opacity: 0.6;
+      cursor: pointer;
+      line-height: 3rem; }
+      .dashboard .left-menu .options li:hover {
+        opacity: 1; }
+  .dashboard .right-container .toolbox {
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 850px; }
+    .dashboard .right-container .toolbox .tool {
+      user-select: none;
+      cursor: pointer;
+      padding: 10px; }
+      .dashboard .right-container .toolbox .tool:active {
+        transform: scale(0.98); }
+      .dashboard .right-container .toolbox .tool + .tool {
+        padding-left: 10px; }
+      .dashboard .right-container .toolbox .tool input {
+        border: none;
+        outline: none;
+        padding-left: 10px; }
+        .dashboard .right-container .toolbox .tool input:hover {
+          box-shadow: 0px 3px 0px -1px rgba(0, 0, 0, 0.5); }
+        .dashboard .right-container .toolbox .tool input:focus {
+          box-shadow: 0px 3px 0px -1px #000000; }
+      .dashboard .right-container .toolbox .tool img {
+        margin-right: 5px;
+        height: 28px;
+        display: inline-block; }
+      .dashboard .right-container .toolbox .tool span {
+        font-size: 1.6rem;
+        font-weight: 300;
+        letter-spacing: 0.3px;
+        height: 30px;
+        line-height: 30px;
+        margin-top: 3px;
+        display: inline-block; }
+  .dashboard .info-table {
+    margin-top: 30px;
+    max-width: 550px;
+    font-size: 1.5rem; }
+  .dashboard .borderless td, .dashboard .borderless th {
+    border: none;
+    opacity: 0.7; }
+    .dashboard .borderless td:hover, .dashboard .borderless th:hover {
+      opacity: 1; }
+
+/*# sourceMappingURL=style.css.map */

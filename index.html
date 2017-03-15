@@ -1,12 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title></title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-    <body>
-    
-    </body>
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Slik</a>
+            </div>
+
+            <ul class="nav navbar-nav">
+                <li><a href="#">Dashboard</a></li>
+                <li class="active"><a href="#">Leads</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active">
+                    <a href="#" class="info">
+                        <span class="name">Andy Chen</span>
+                        <br/>
+                        <span class="credits">42 credits remaining</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="dashboard">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-3 left-menu">
+                <ul class="title">
+                    <li>All Leads</li>
+                </ul>
+                <ul class="options">
+                    <li>BananaCo Leads</li>
+                    <li>Product Sales List</li>
+                </ul>
+            </div>
+            <div class="col-xs-9 right-container">
+                <div class="toolbox">
+                    <div class="tool">
+                        <img src="css/icons/search-to-filter.svg">
+                        <span><input type="text" placeholder="Search to filter"></span>
+                    </div>
+                    <div class="tool">
+                        <img src="css/icons/new-list.svg">
+                        <span>New List</span>
+                    </div>
+                    <div class="tool">
+                        <img src="css/icons/export.svg">
+                        <span>Export</span>
+                    </div>
+                    <div class="tool">
+                        <img src="css/icons/move-leads.svg">
+                        <span>Move Leads</span>
+                    </div>
+                    <div class="tool">
+                        <img src="css/icons/delete-selected-leads.svg">
+                        <span>Delete Selected Leads</span>
+                    </div>
+                </div>
+                    <table class="table borderless info-table" border="0">
+                    <tbody>
+                        <tr>
+                            <th><input type="checkbox" /></th>
+                            <td>Lead Leadson</td>
+                            <td>Founder & CEO</td>
+                            <td>sample@email.com</td>
+                        </tr>
+                        <tr>
+                            <th><input type="checkbox" /></th>
+                            <td>Lead Leadson</td>
+                            <td>Founder & CEO</td>
+                            <td>sample@email.com</td>
+                        </tr>
+                        <tr>
+                            <th><input type="checkbox" /></th>
+                            <td>Lead Leadson</td>
+                            <td>Founder & CEO</td>
+                            <td>sample@email.com</td>
+                        </tr>
+                        <tr>
+                            <th><input type="checkbox" /></th>
+                            <td>Lead Leadson</td>
+                            <td>Founder & CEO</td>
+                            <td>sample@email.com</td>
+                        </tr>
+                    </tbody>
+                    </table>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
 </html>
